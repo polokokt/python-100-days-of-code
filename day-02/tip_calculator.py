@@ -1,5 +1,6 @@
 # Tip calculator for a restaurant bill
 
+
 def calculate(bill, tip, people):
     total = bill * (1 + (tip / 100))
     per_person = total / people

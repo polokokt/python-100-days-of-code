@@ -35,9 +35,7 @@ should_continue = True
 
 while should_continue is True:
 
-    direction = input(
-        "Type 'encode' to encrypt, type 'decode' to decrypt message:\n "
-    )
+    direction = input("Type 'encode' to encrypt, type 'decode' to decrypt message:\n ")
     text = input("Type your message:\n ")
     shift = int(input("Type the shift number:\n "))
 
