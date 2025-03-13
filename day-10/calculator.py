@@ -38,8 +38,8 @@ while another_count:
 
     second_number = float(input("What is the second number: "))
 
-    # the main operation. Take the operation from the input 
-    # and put it into dictionary. 
+    # the main operation. Take the operation from the input
+    # and put it into dictionary.
     # This points into proper def and we can add numbers like function call
 
     operation_result = operations[operator](first_number, second_number)

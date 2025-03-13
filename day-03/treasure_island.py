@@ -11,7 +11,7 @@ if (choice1 == "left"):
         "Do you want to swim over the lake or wait?\n"
         'Type "wait" or "swim"\n'
         ).lower()
-    if (choice2  == "wait"):
+    if (choice2 == "wait"):
         doors = (input(
                 "You found a house with three doors. Which doors you choice?\n"
                 'Type "blue", "red" or "yellow"\n'

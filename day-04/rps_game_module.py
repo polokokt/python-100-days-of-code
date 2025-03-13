@@ -1,7 +1,7 @@
 # Rock Paper Scissors ASCII Art
 
 # Rock
-rock = """    
+rock = """
     _______
 ---'   ____)
       (_____)
@@ -11,7 +11,7 @@ rock = """
 """
 
 # Scissors
-scissors = """    
+scissors = """
     _______
 ---'   ____)____
           ______)
@@ -21,7 +21,7 @@ scissors = """
 """
 
 # Paper
-paper = """     
+paper = """
      _______
 ---'    ____)____
            ______)
