@@ -12,4 +12,3 @@ print(
         f"pays accordin to option 2"
     )
 )
-
