@@ -20,9 +20,9 @@ print(f"random float number: {random_float}")
 # simple game to choice heads or tails , based on randint number
 random_heads_or_tails = random.randint(0, 1)
 if random_heads_or_tails == 0:
-    print(f"heads or tails?: Heads")
+    print("heads or tails?: Heads")
 else:
-    print(f"heads or tails?: Teils")
+    print("heads or tails?: Teils")
 
 # First list with output
 first_list = ["Adam", "Milena", "Monika", "Rafal"]
