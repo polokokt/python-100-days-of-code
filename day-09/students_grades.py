@@ -1,9 +1,9 @@
 student_scores = {
-    'Harry': 88,
-    'Mary': 78,
-    'John': 95,
-    'Adam': 75,
-    'Sue': 60,
+    "Harry": 88,
+    "Mary": 78,
+    "John": 95,
+    "Adam": 75,
+    "Sue": 60,
 }
 
 student_grades = {}
@@ -17,5 +17,5 @@ for student in student_scores:
         student_grades[student] = "Acceptable"
     elif student_scores[student] <= 70:
         student_grades[student] = "Fail"
-    
+
 print(student_grades)

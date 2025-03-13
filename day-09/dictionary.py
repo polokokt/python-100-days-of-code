@@ -3,7 +3,7 @@ programming_dictionary = {
     "Function": "A piece of code...",
 }
 
-print (programming_dictionary["Bug"])
+print(programming_dictionary["Bug"])
 
 loop = input("Input the description for Loop: \n")
 
@@ -11,11 +11,11 @@ programming_dictionary["Loop"] = loop
 
 print(programming_dictionary)
 
-#Wipe an existing dictionary
+# Wipe an existing dictionary
 
-#programming_dictionary = {}
+# programming_dictionary = {}
 
-#print(programming_dictionary)
+# print(programming_dictionary)
 
 # Loop for the dictionary
 

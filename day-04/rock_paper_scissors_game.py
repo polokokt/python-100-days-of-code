@@ -1,10 +1,16 @@
 import random
 import rps_game_module
 
-your_input = int(input("What do you choose. 0 for rock, 1 for scissors, 2 for papper:\n "))
+your_input = int(
+    input("What do you choose. 0 for rock, 1 for scissors, 2 for papper:\n ")
+)
 
-computer_int = random.randint(0,2)
-list_of_elements=[rps_game_module.rock, rps_game_module.scissors, rps_game_module.paper]
+computer_int = random.randint(0, 2)
+list_of_elements = [
+    rps_game_module.rock,
+    rps_game_module.scissors,
+    rps_game_module.paper,
+]
 print(f"Computer choiced: {computer_int}")
 
 print("You choiced:\n")
@@ -36,4 +42,3 @@ elif your_input == 2:
         print("Nobody win")
 else:
     print("Wrong number !!!")
-    

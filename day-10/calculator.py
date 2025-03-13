@@ -1,15 +1,22 @@
 def adding(n1, n2):
     return n1 + n2
+
+
 def subtracting(n1, n2):
     return n1 - n2
+
+
 def multiplying(n1, n2):
     return n1 * n2
+
+
 def dividing(n1, n2):
     return n1 / n2
 
+
 operations = {
     "+": adding,
-    "-": subtracting, 
+    "-": subtracting,
     "*": multiplying,
     "/": dividing,
 }
@@ -32,14 +39,17 @@ while another_count:
     second_number = float(input("What is the second number: "))
 
     ## the main operation. Take the operation from the input and put it into dictionary. This points into proper def and we can add numbers like function call
-    
+
     operation_result = operations[operator](first_number, second_number)
 
-    print(f"Operation result is: {first_number} {operator} {second_number} = {operation_result}")
+    print(
+        f"Operation result is: {first_number} {operator} {second_number} = {operation_result}"
+    )
 
-    question = input(f"Type 'y' to continue calculating with $operation_result, or type 'n' to start a new calculation: ")
+    question = input(
+        f"Type 'y' to continue calculating with $operation_result, or type 'n' to start a new calculation: "
+    )
     if question == "y":
         continus = True
     elif question == "n":
         continus = False
-

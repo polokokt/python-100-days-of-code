@@ -6,12 +6,14 @@ def format_name(f_name, l_name):
 
     return f"{formated_name} {formated_lastname}"
 
+
 name = input("Write name: \n")
 
 
 lastname = input("Write lastname: \n")
 
 print(format_name(name, lastname))
+
 
 def function_1(text):
     return text + text

@@ -1,9 +1,45 @@
-student_scores=[87, 125, 133, 98, 176, 59, 112, 162, 134, 78, 186, 83, 91, 177, 142, 150, 93, 61, 193, 171, 72, 118, 155, 80, 107, 137, 167, 139, 66, 120, 160, 145, 73, 88, 129]
+student_scores = [
+    87,
+    125,
+    133,
+    98,
+    176,
+    59,
+    112,
+    162,
+    134,
+    78,
+    186,
+    83,
+    91,
+    177,
+    142,
+    150,
+    93,
+    61,
+    193,
+    171,
+    72,
+    118,
+    155,
+    80,
+    107,
+    137,
+    167,
+    139,
+    66,
+    120,
+    160,
+    145,
+    73,
+    88,
+    129,
+]
 
-# function sum 
+# function sum
 print(f"Summary students scores: {sum(student_scores)}")
 
-#count sum in the loop
+# count sum in the loop
 
 total = 0
 
@@ -12,7 +48,7 @@ for score in student_scores:
 
 print(f"Sum from the loop: {total}")
 
-# build in max function 
+# build in max function
 
 print(f"Max value based on max function: {max(student_scores)}")
 

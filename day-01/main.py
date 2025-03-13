@@ -1,7 +1,7 @@
-#This line of code will take an input string using input() function
+# This line of code will take an input string using input() function
 print("Hello " + input("What is your name? ") + "!")
 
-#input as variable
+# input as variable
 family_name = input("What is you family name? ")
 print("Your family name is: " + family_name)
 print("Family name length: " + str(len(family_name)))

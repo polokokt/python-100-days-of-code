@@ -13,7 +13,5 @@ def count(year):
         leap_year = "False"
     return f"{leap_year}"
 
+
 print(count(int(input("Tell my the year: \n"))))
-
-
-

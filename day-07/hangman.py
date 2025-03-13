@@ -2,7 +2,7 @@ import random
 import blanks_generator
 import hangman_asci
 
-words_list=["parasol", "torba", "lina", "krokodyl", "ryba"]
+words_list = ["parasol", "torba", "lina", "krokodyl", "ryba"]
 
 chosen_word = random.choice(words_list)
 # print(chosen_word)
@@ -11,8 +11,8 @@ placeholder = blanks_generator.generate(chosen_word)
 print(placeholder)
 
 display = placeholder
-correct_letters = []    # list to keep correct letters guess by the gamer
-counter = -1            # counter of lives (reverse)
+correct_letters = []  # list to keep correct letters guess by the gamer
+counter = -1  # counter of lives (reverse)
 while "_" in display:
     guess = input("What is your letter?:\n ").lower()
     if guess not in correct_letters:
