@@ -2,14 +2,12 @@ print("Welcome to Treasury Island game!")
 print("Your mission is to find the treasure.")
 
 choice1 = input(
-    "You are on the cross road. Where do you want to go?\n"
-    'Type "left" or "right":\n'
+    "Cross road. Where do you want to go?\n" 'Type "left" or "right":\n'
 ).lower()
 
 if choice1 == "left":
     choice2 = input(
-        "Do you want to swim over the lake or wait?\n"
-        'Type "wait" or "swim":\n'
+        "Want to swim over the lake or wait?\n" 'Type "wait" or "swim":\n'
     ).lower()
 
     if choice2 == "wait":
