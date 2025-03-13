@@ -1,6 +1,6 @@
-sum = 0 
+sum = 0
 
-for number in range(1,101):
+for number in range(1, 101):
     sum += number
 
 print(f"Suma: {sum}")

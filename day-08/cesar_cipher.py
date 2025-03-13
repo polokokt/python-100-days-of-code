@@ -6,7 +6,7 @@ alphabet = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n'
 
 should_continue = True
 
-while should_continue == True:
+while should_continue is True:
 
     direction = input("Type 'encode' to encrypt, type 'decode' to decrypt message:\n ")
     text = input("Type your message:\n ")
