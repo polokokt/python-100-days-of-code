@@ -24,7 +24,7 @@ else:
     print("You type a wrong size input")
     exit(0)
 
-if extra_cheese == 'Y':
+if extra_cheese == "Y":
     bill += 1
 
 print(f"Your final bill is: ${bill} ")

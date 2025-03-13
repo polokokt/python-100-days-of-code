@@ -11,4 +11,5 @@ def calculate_love_score(name1, name2):
         count_l += name2.lower().count(letter_check)
     print(f"True love: {count_t}{count_l}")
 
+
 calculate_love_score("Angela Yu", "Jack Bauer")

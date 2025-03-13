@@ -1,7 +1,7 @@
-
 import art
 
 print(art.logo)
+
 
 def find_the_winner(list_of_bidders):
     winner = ""
@@ -11,6 +11,7 @@ def find_the_winner(list_of_bidders):
             price = int(list_of_bidders[name])
             winner = name
     print(f"The winner is {winner} with a bid of ${price}")
+
 
 print("Welcome to the secret auction program.")
 
