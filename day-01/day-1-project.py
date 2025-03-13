@@ -1,5 +1,5 @@
 # Band name generator
-# Input city name, pet's name and receive the best name for you band.  
+# Input city name, pet's name and receive the best name for you band.
 
 print("Welcome to the band name generator")
 city = input("What's the name of the city you grew up in? \n")
