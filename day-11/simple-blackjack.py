@@ -29,12 +29,7 @@ def choice_cards(cards_list):
 
 
 def change_list_to_string(long_list):
-    list_as_string = ""
-    for i in range(len(long_list)):
-        if len(list_as_string) > 0:
-            list_as_string += ", "
-        list_as_string += str(long_list[i])
-    return list_as_string
+    return ", ".join(map(str, long_list))
 
 
 def sum_cards(player_cards):
@@ -77,22 +72,16 @@ while new_card:
 
     user_sum = sum_cards(user_cards)
     computer_sum = sum_cards(computer_cards)
-
     print(
-        "Player cards: " 
-        f"{change_list_to_string(user_cards)}; Summary: {user_sum}",
+        f"Player cards: {change_list_to_string(user_cards)}; Summary: {user_sum}",
         f"\nComputer first card: {computer_cards[0]}",
     )
 
-    if (
-        user_sum > 21 
-        or (user_sum == 21 and (computer_sum != 21 or computer_sum == 21))
-    ):
+    if user_sum > 21 or (user_sum == 21 and (computer_sum != 21 or computer_sum == 21)):
         new_card = False
     else:
         HS = input(
-            "Choice Hit (h) to take another card," 
-            " or Stand (s) to check the cards: "
+            "Choice Hit (h) to take another card," " or Stand (s) to check the cards: "
         )
 
         if HS == "h" ":":
@@ -106,8 +95,7 @@ while sum_cards(computer_cards) < 17:
 
 print(
     "Summary:",
-    "\nPlayer cards: " 
-    + f"{change_list_to_string(user_cards)}; Summary: {user_sum}",
+    "\nPlayer cards: " + f"{change_list_to_string(user_cards)}; Summary: {user_sum}",
     "\nComputer cards: "
     + f"{change_list_to_string(computer_cards)}; Summary: {computer_sum}",
 )
