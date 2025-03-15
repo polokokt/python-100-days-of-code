@@ -45,8 +45,7 @@ while another_count:
     operation_result = operations[operator](first_number, second_number)
 
     print(
-        f"Operation result is: {first_number} {operator} "
-        f"{second_number} = {operation_result}"
+        f"Operation result is: {first_number} {operator} " f"{second_number} = {operation_result}"
     )
 
     question = input(

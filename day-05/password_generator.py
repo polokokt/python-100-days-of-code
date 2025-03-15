@@ -63,9 +63,7 @@ numbers_to_use = input("How many numbers would you like to be in password?\n ")
 
 random_symbols = random.sample(symbols, int(symbols_to_use))
 random_numbers = random.sample(numbers, int(numbers_to_use))
-random_letters = random.sample(
-    letters, int(length) - int(symbols_to_use) - int(numbers_to_use)
-)
+random_letters = random.sample(letters, int(length) - int(symbols_to_use) - int(numbers_to_use))
 
 new_password = random_symbols + random_numbers + random_letters
 random.shuffle(new_password)
