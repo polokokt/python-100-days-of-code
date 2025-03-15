@@ -1,9 +1,7 @@
 import random
 import rps_game_module
 
-your_input = int(
-    input("What do you choose. 0 for rock, 1 for scissors, 2 for papper:\n ")
-)
+your_input = int(input("What do you choose. 0 for rock, 1 for scissors, 2 for papper:\n "))
 
 computer_int = random.randint(0, 2)
 list_of_elements = [
