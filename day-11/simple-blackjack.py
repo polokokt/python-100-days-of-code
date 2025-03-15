@@ -1,6 +1,6 @@
 """
 This is the first version of "simple" blackjack game.
-The rules are easrier than in the real game. A has locked value into 11. 
+The rules are easrier than in the real game. A has locked value into 11.
 """
 
 import random
@@ -43,6 +43,7 @@ def sum_cards(player_cards):
         suma += int(card_value[card])
     return suma
 
+
 def compare(user_sum, computer_sum):
     if user_sum > 21:
         print("You Lose. Game over !!!")
@@ -78,15 +79,20 @@ while new_card:
     computer_sum = sum_cards(computer_cards)
 
     print(
-        "Player cards: " f"{change_list_to_string(user_cards)}; Summary: {user_sum}",
+        "Player cards: " 
+        f"{change_list_to_string(user_cards)}; Summary: {user_sum}",
         f"\nComputer first card: {computer_cards[0]}",
     )
 
-    if user_sum > 21 or (user_sum == 21 and (computer_sum != 21 or computer_sum == 21)):
+    if (
+        user_sum > 21 
+        or (user_sum == 21 and (computer_sum != 21 or computer_sum == 21))
+    ):
         new_card = False
     else:
         HS = input(
-            "Choice Hit (h) to take another card," " or Stand (s) to check the cards: "
+            "Choice Hit (h) to take another card," 
+            " or Stand (s) to check the cards: "
         )
 
         if HS == "h" ":":
@@ -100,9 +106,10 @@ while sum_cards(computer_cards) < 17:
 
 print(
     "Summary:",
-    "\nPlayer cards: " f"{change_list_to_string(user_cards)}; Summary: {user_sum}",
+    "\nPlayer cards: " 
+    + f"{change_list_to_string(user_cards)}; Summary: {user_sum}",
     "\nComputer cards: "
-    f"{change_list_to_string(computer_cards)}; Summary: {computer_sum}",
+    + f"{change_list_to_string(computer_cards)}; Summary: {computer_sum}",
 )
 
 compare(user_sum, computer_sum)
