@@ -73,16 +73,15 @@ while new_card:
     user_sum = sum_cards(user_cards)
     computer_sum = sum_cards(computer_cards)
     print(
-        f"Player cards: {change_list_to_string(user_cards)}; Summary: {user_sum}",
+        f"Player cards: {change_list_to_string(user_cards)}; ",
+        f"Summary: {user_sum}",
         f"\nComputer first card: {computer_cards[0]}",
     )
 
     if user_sum > 21 or (user_sum == 21 and (computer_sum != 21 or computer_sum == 21)):
         new_card = False
     else:
-        HS = input(
-            "Choice Hit (h) to take another card," " or Stand (s) to check the cards: "
-        )
+        HS = input("Choice Hit (h) to take another card," " or Stand (s) to check the cards: ")
 
         if HS == "h" ":":
             new_card = True
@@ -96,8 +95,7 @@ while sum_cards(computer_cards) < 17:
 print(
     "Summary:",
     "\nPlayer cards: " + f"{change_list_to_string(user_cards)}; Summary: {user_sum}",
-    "\nComputer cards: "
-    + f"{change_list_to_string(computer_cards)}; Summary: {computer_sum}",
+    "\nComputer cards: " + f"{change_list_to_string(computer_cards)}; Summary: {computer_sum}",
 )
 
 compare(user_sum, computer_sum)
