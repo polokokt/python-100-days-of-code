@@ -44,14 +44,9 @@ while another_count:
 
     operation_result = operations[operator](first_number, second_number)
 
-    print(
-        f"Operation result is: {first_number} {operator} " f"{second_number} = {operation_result}"
-    )
+    print(f"Operation result is: {first_number} {operator} " f"{second_number} = {operation_result}")
 
-    question = input(
-        "Type 'y' to continue calculating with "
-        f"{operation_result}, or type 'n' to start a new calculation: "
-    )
+    question = input("Type 'y' to continue calculating with " f"{operation_result}, or type 'n' to start a new calculation: ")
     if question == "y":
         continus = True
     elif question == "n":
