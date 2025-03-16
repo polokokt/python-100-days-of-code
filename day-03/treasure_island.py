@@ -8,8 +8,7 @@ if choice1 == "left":
 
     if choice2 == "wait":
         doors = input(
-            "You found a house with three doors. Which door do you choose?\n"
-            'Type "blue", "red" or "yellow":\n'
+            "You found a house with three doors. Which door do you choose?\n" 'Type "blue", "red" or "yellow":\n'
         ).lower()
 
         if doors == "yellow":
