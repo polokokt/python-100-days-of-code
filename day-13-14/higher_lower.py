@@ -57,7 +57,7 @@ def game():
         a, b = random_data()
         answer = input("Who has more followers? Type 'A' 'or 'B': ")
         player_win = check_result(a, b, answer)
-        if player_win == True:
+        if player_win:
             score += 1
         else:
             clear_screen()
